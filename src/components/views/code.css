@@ -1,0 +1,117 @@
+#code-container {
+  width: 100%;
+  height: 500px;
+
+  border: 1px solid red;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'block1 block3 block3 block4 block5'
+    'block12 block12 block8 block10 block10'
+    'block12 block12 block19 block19 block15'
+    'block16 block17 block19 block19 block20'
+    'block22 block22 block23 block25 block25';
+}
+
+.block-1 {
+  border: 1px solid green;
+  grid-area: block1;
+}
+.block-2 {
+  border: 1px solid yellow;
+  grid-area: block2;
+}
+.block-3 {
+  border: 1px solid red;
+  grid-area: block3;
+}
+.block-4 {
+  border: 1px solid green;
+  grid-area: block4;
+}
+.block-5 {
+  border: 1px solid yellow;
+  grid-area: block5;
+}
+.block-6 {
+  border: 1px solid red;
+  grid-area: block6;
+}
+.block-7 {
+  border: 1px solid green;
+  grid-area: block7;
+}
+.block-8 {
+  border: 1px solid yellow;
+  grid-area: block8;
+}
+.block-9 {
+  border: 1px solid red;
+  grid-area: block9;
+}
+.block-10 {
+  border: 1px solid green;
+  grid-area: block10;
+}
+.block-11 {
+  border: 1px solid yellow;
+  grid-area: block11;
+}
+.block-12 {
+  border: 1px solid red;
+  grid-area: block12;
+}
+.block-13 {
+  border: 1px solid red;
+  grid-area: block13;
+}
+.block-14 {
+  border: 1px solid green;
+  grid-area: block14;
+}
+.block-15 {
+  border: 1px solid yellow;
+  grid-area: block15;
+}
+.block-16 {
+  border: 1px solid red;
+  grid-area: block16;
+}
+.block-17 {
+  border: 1px solid yellow;
+  grid-area: block17;
+}
+.block-18 {
+  border: 1px solid red;
+  grid-area: block18;
+}
+.block-19 {
+  border: 1px solid green;
+  grid-area: block19;
+}
+.block-20 {
+  border: 1px solid yellow;
+  grid-area: block20;
+}
+.block-21 {
+  border: 1px solid red;
+  grid-area: block21;
+}
+.block-22 {
+  border: 1px solid red;
+  grid-area: block22;
+}
+.block-23 {
+  border: 1px solid green;
+  grid-area: block23;
+}
+.block-24 {
+  border: 1px solid yellow;
+  grid-area: block24;
+}
+.block-25 {
+  border: 1px solid red;
+  grid-area: block25;
+}

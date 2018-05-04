@@ -1,19 +1,38 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Router, Route, Switch } from 'react-router-dom';
+import AppViews from './components/app-views';
+import MainMenu from './components/menus/main-menu';
+import createHistory from 'history/createBrowserHistory';
+import { Transitions } from './transitions/transition-group-component';
+import { Routes } from './routes';
 import './App.css';
+
+const history = createHistory();
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router history={history}>
+        <Route
+          render={({ location }) => {
+            return (
+              <div className="App">
+                <header className="App-header">
+                  <MainMenu history={history} />
+                </header>
+                <div id="route-container">
+                  <Transitions pageKey={location.key} {...location.state}>
+                    <Switch location={location} />
+                    <Routes />
+                    <Switch />
+                  </Transitions>
+                </div>
+              </div>
+            );
+          }}
+        />
+      </Router>
     );
   }
 }
