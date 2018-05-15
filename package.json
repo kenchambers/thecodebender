@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "actioncable": "^5.2.0",
+    "axios": "^0.18.0",
     "history": "^4.7.2",
+    "material-ui": "^1.0.0-beta.44",
     "radium": "^0.24.0",
     "react": "^16.3.1",
+    "react-actioncable-provider": "^1.0.3",
     "react-animations": "^1.0.0",
     "react-awesome-button": "^4.2.0",
     "react-contextual": "^3.9.4",
